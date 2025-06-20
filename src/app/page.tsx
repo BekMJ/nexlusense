@@ -1,103 +1,208 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="space-y-24">
+      {/* Hero Section */}
+      <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden p-0">
+        {/* Background image */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/hero-bg.jpg"
+            alt="Circuit board background"
+            fill
+            priority
+            className="object-cover object-center"
+            style={{ filter: 'brightness(0.5) blur(1px)' }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight drop-shadow-lg">
+              NexLuSense
+            </h1>
+            <p className="mt-6 text-xl text-gray-100 max-w-3xl mx-auto drop-shadow">
+              A professor-student-led innovation studio pushing the boundaries of photonic sensing and autonomous systems.
+            </p>
+            <div className="mt-10 flex justify-center gap-4">
+              <Link
+                href="/contact"
+                className="px-8 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors"
+              >
+                Get Started
+              </Link>
+              <Link
+                href="/about"
+                className="px-8 py-3 border border-gray-300 dark:border-gray-600 text-white rounded-full font-medium hover:bg-gray-50/10 dark:hover:bg-gray-800/80 transition-colors"
+              >
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              Our Products
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              Innovative solutions for environmental monitoring and autonomous systems
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Methane Detection */}
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  Methane Detection
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Advanced methane detection system for industrial and environmental monitoring.
+                </p>
+                <Link
+                  href="/products/methane-detection"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </div>
+
+            {/* XHale-Health */}
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  XHale-Health
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Next-generation CO monitoring breath analyzer for personal health tracking.
+                </p>
+                <Link
+                  href="/products/xhale-health"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </div>
+
+            {/* OKE-Ride */}
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                  OKE-Ride
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Autonomous three-legged scooter platform with advanced navigation capabilities.
+                </p>
+                <Link
+                  href="/products/oke-ride"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              Why Choose NexLuSense?
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              Combining academic expertise with practical innovation
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Innovation
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Cutting-edge solutions that push boundaries
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Expertise
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Professor-student partnership model
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Quality
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                High-precision, reliable solutions
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-blue-600 dark:text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                Impact
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Real-world solutions that make a difference
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-blue-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Get Started?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Contact us to learn more about our innovative solutions
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-blue-600 bg-white hover:bg-blue-50"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
