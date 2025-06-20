@@ -1,24 +1,16 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
+import Header from "@/components/Header";
+import TransitionWrapper from "@/components/TransitionWrapper";
 import Link from "next/link";
 
-// 1. Declare the font variables before using them
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NexLuSense | Innovative Photonic Sensing & Autonomous Systems",
-  description:
-    "NexLuSense is a professor-student-led studio specializing in photonic sensing, IoT integration, and autonomous platforms.",
+  title: "NexLuSense - Innovation Studio",
+  description: "A professor-student-led innovation studio pushing the boundaries of photonic sensing and autonomous systems.",
   openGraph: {
     title: "NexLuSense",
     description: "Cutting-edge photonic sensors and autonomous systems.",
@@ -28,19 +20,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex flex-col min-h-screen`}
-      >
-        <header className="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
-          <Navigation />
-        </header>
-
-        <main className="flex-grow">{children}</main>
+      <body className={inter.className}>
+        <Header />
+        <TransitionWrapper transitionType="fade">
+          <main className="flex-grow">{children}</main>
+        </TransitionWrapper>
 
         <footer className="py-8 border-t border-gray-200 dark:border-gray-700">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
