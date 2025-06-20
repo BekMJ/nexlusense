@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     product: string;
-  };
+  }>;
 }
 
 const productData = {
@@ -61,7 +61,8 @@ const productData = {
 };
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const product = productData[params.product as keyof typeof productData];
+  const resolvedParams = await params;
+  const product = productData[resolvedParams.product as keyof typeof productData];
   
   return {
     title: `${product.title} | NexLuSense`,
@@ -69,8 +70,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   };
 }
 
-export default function ProductPage({ params }: ProductPageProps) {
-  const product = productData[params.product as keyof typeof productData];
+export default async function ProductPage({ params }: ProductPageProps) {
+  const resolvedParams = await params;
+  const product = productData[resolvedParams.product as keyof typeof productData];
 
   if (!product) {
     return <div>Product not found</div>;
