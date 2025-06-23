@@ -104,117 +104,139 @@ export default async function ProductPage({ params }: ProductPageProps) {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* Product Image */}
-        <div className="relative h-[400px] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
-          {resolvedParams.product === 'methane-detection' ? (
-            <Image
-              src="/methane1.jpg"
-              alt="Methane Detection System"
-              fill
-              className="object-cover"
-              priority
-            />
-          ) : (
-            <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-              Product Image Placeholder
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      {/* Hero Section */}
+      <div className="relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Product Image with Enhanced Styling */}
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative h-[500px] rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-2xl">
+                {resolvedParams.product === 'methane-detection' ? (
+                  <Image
+                    src="/methane1.jpg"
+                    alt="Methane Detection System"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    priority
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                    Product Image Placeholder
+                  </div>
+                )}
+              </div>
             </div>
-          )}
-        </div>
 
-        {/* Product Info */}
-        <div className="space-y-8">
-          <div>
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              {product.title}
-            </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
-              {product.description}
-            </p>
-          </div>
+            {/* Product Info with Enhanced Typography */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 text-sm font-medium">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
+                  Advanced Technology
+                </div>
+                <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
+                  {product.title}
+                </h1>
+                <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {product.description}
+                </p>
+              </div>
 
-          {/* Features */}
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-              Key Features
-            </h2>
-            <ul className="space-y-3">
-              {product.features.map((feature, index) => (
-                <li key={index} className="flex items-start">
-                  <svg
-                    className="h-6 w-6 text-blue-500 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
+              {/* Enhanced Features Section */}
+              <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-white/20 dark:border-gray-700/50">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                  <svg className="w-8 h-8 text-blue-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-300">{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  Key Features
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {product.features.map((feature, index) => (
+                    <div key={index} className="flex items-start group">
+                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                        <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
+                        {feature}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-          {/* Applications */}
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-              Applications
-            </h2>
-            <ul className="space-y-3">
-              {product.applications.map((application, index) => (
-                <li key={index} className="flex items-start">
-                  <svg
-                    className="h-6 w-6 text-blue-500 mr-2"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
+              {/* Enhanced Applications Section */}
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-700/30">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+                  <svg className="w-8 h-8 text-indigo-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
-                  <span className="text-gray-600 dark:text-gray-300">{application}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  Applications
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {product.applications.map((application, index) => (
+                    <div key={index} className="flex items-start group">
+                      <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                        <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
+                        {application}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-          {/* CTA Button */}
-          <div className="pt-6">
-            <a
-              href="/contact"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
-            >
-              Request a Demo
-            </a>
+              {/* Enhanced CTA Button */}
+              <div className="pt-6">
+                <a
+                  href="/contact"
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                  Request a Demo
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Image Gallery for Methane Detection */}
+      {/* Enhanced Image Gallery for Methane Detection */}
       {resolvedParams.product === 'methane-detection' && (
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Product Gallery
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Product Gallery
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              Explore our comprehensive collection of methane detection system images showcasing advanced technology and precision engineering.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
             {methaneImages.map((image, index) => (
-              <div key={index} className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div key={index} className="group relative aspect-square rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <Image
                   src={`/${image}`}
                   alt={`Methane Detection System - Image ${index + 1}`}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-200"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-sm font-medium">Image {index + 1}</p>
+                </div>
               </div>
             ))}
           </div>
