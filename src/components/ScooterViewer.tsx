@@ -1,7 +1,7 @@
 'use client';
 
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Environment, useGLTF, Stars } from '@react-three/drei';
+import { OrbitControls, Environment, useGLTF } from '@react-three/drei';
 import { Suspense } from 'react';
 
 function ScooterModel() {
@@ -13,7 +13,7 @@ function ScooterModel() {
 
 export default function ScooterViewer() {
   return (
-    <div className="w-full h-[500px] rounded-2xl overflow-hidden bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 dark:from-gray-900 dark:via-green-900/20 dark:to-teal-900/20 shadow-2xl border border-white/20 dark:border-gray-700/30">
+    <div className="w-full h-[500px] rounded-2xl overflow-hidden">
       <Canvas
         camera={{ position: [0, 0, 3], fov: 45 }}
         style={{ background: 'transparent' }}
@@ -24,55 +24,15 @@ export default function ScooterViewer() {
         }}
       >
         <Suspense fallback={null}>
-          {/* Animated background stars */}
-          <Stars 
-            radius={100} 
-            depth={50} 
-            count={5000} 
-            factor={4} 
-            saturation={0} 
-            fade 
-            speed={1}
-          />
-          
           {/* Main 3D Model */}
           <ScooterModel />
           
-          {/* Enhanced lighting setup */}
-          <Environment preset="dawn" />
-          <ambientLight intensity={0.4} />
+          {/* Simple lighting setup */}
+          <Environment preset="studio" />
+          <ambientLight intensity={0.6} />
           <directionalLight 
             position={[10, 10, 5]} 
-            intensity={1.5} 
-            castShadow
-            shadow-mapSize-width={2048}
-            shadow-mapSize-height={2048}
-          />
-          <pointLight 
-            position={[-10, -10, -5]} 
-            intensity={0.8} 
-            color="#10b981"
-          />
-          <pointLight 
-            position={[10, -10, 5]} 
-            intensity={0.6} 
-            color="#06b6d4"
-          />
-          
-          {/* Rim lighting for dramatic effect */}
-          <spotLight 
-            position={[0, 10, 0]} 
-            angle={0.3} 
-            penumbra={1} 
-            intensity={0.8} 
-            color="#ffffff"
-          />
-          
-          {/* Additional accent lighting */}
-          <pointLight 
-            position={[0, 5, 10]} 
-            intensity={0.4} 
-            color="#f59e0b"
+            intensity={1.0}
           />
         </Suspense>
         
@@ -90,9 +50,6 @@ export default function ScooterViewer() {
           enableDamping={true}
         />
       </Canvas>
-      
-      {/* Overlay gradient for extra aesthetic */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-transparent via-transparent to-green-50/20 dark:to-green-900/10 rounded-2xl"></div>
     </div>
   );
 } 
