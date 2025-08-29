@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            {/* Methane Detection */}
+            {/* Environmental Sensing */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
               <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,17 +39,17 @@ export default function About() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Methane Emission Detection System
+                Environmental Sensing
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Our flagship environmental monitoring technology that provides real-time methane concentration monitoring for industrial and environmental applications. Features multi-parameter environmental sensing, cloud-based data analytics, long battery life, and ruggedized design for harsh environments.
+                Advanced environmental monitoring solutions for industrial and environmental applications. We specialize in multi-parameter environmental sensing, cloud-based data analytics, long battery life, and ruggedized design for harsh environments.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Designed for: Oil & gas leak detection, landfill monitoring, industrial compliance, and environmental research.</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Example: Methane Emission Detection System - designed for oil & gas leak detection, landfill monitoring, industrial compliance, and environmental research.</span>
               </div>
             </div>
 
-            {/* Health Monitoring */}
+            {/* Health Sensing */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,13 +57,13 @@ export default function About() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Health Monitoring Device
+                Health Sensing
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                A next-generation CO monitoring breath analyzer for personal health tracking. This innovative device offers precise CO breath analysis, real-time health metrics, and personal health insights with cloud data synchronization.
+                Next-generation health monitoring and breath analysis solutions for personal health tracking. We develop innovative devices that offer precise health metrics, real-time monitoring, and personal health insights with cloud data synchronization.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Designed for: Personal health monitoring, medical research, smoking cessation programs, and athletic performance tracking.</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Example: XHale-Health CO Monitor - designed for personal health monitoring, medical research, smoking cessation programs, and athletic performance tracking.</span>
               </div>
             </div>
 
@@ -75,13 +75,13 @@ export default function About() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Smart Navigation System
+                Smart Navigation
               </h3>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                An autonomous three-legged scooter platform with advanced navigation capabilities. This revolutionary mobility solution features autonomous navigation, terrain adaptation, payload customization, long-range operation, and smart obstacle avoidance.
+                Autonomous navigation platforms with advanced mobility and payload capabilities. We create revolutionary mobility solutions featuring autonomous navigation, terrain adaptation, payload customization, long-range operation, and smart obstacle avoidance.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Designed for: Last-mile delivery, industrial inspection, research platform development, and custom payload deployment.</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Example: OKE-Ride Autonomous Platform - designed for last-mile delivery, industrial inspection, research platform development, and custom payload deployment.</span>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function About() {
               Our Capabilities
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-              The Health Monitoring Device and Smart Navigation System represent just two examples of our broader capabilities in developing innovative technology solutions. We have the expertise to create custom solutions across various domains, leveraging our core competencies in sensor technology, autonomous systems, and mobile application development.
+              These three core areas represent examples of our broader capabilities in developing innovative technology solutions. We have the expertise to create custom solutions across various domains, leveraging our core competencies in sensor technology, autonomous systems, and mobile application development.
             </p>
           </div>
         </div>

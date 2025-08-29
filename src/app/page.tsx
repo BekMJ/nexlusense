@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Methane Detection */}
+            {/* Environmental Sensing */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover-lift animate-fade-in-left" style={{ animationDelay: '0.1s' }}>
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 animate-pulse-slow">
@@ -84,13 +84,13 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Methane Detection
+                  Environmental Sensing
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                  Advanced methane detection system for industrial and environmental monitoring.
+                  Advanced environmental monitoring solutions for industrial and environmental applications.
                 </p>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Example of our environmental monitoring capabilities
+                  Example: Methane Detection System
                 </div>
                 <Link
                   href="/products/methane-detection"
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* XHale-Health */}
+            {/* Health Sensing */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover-lift animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 animate-pulse-slow">
@@ -113,13 +113,13 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  XHale-Health
+                  Health Sensing
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                  Next-generation CO monitoring breath analyzer for personal health tracking.
+                  Next-generation health monitoring and breath analysis solutions for personal health tracking.
                 </p>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Example of our health monitoring capabilities
+                  Example: XHale-Health CO Monitor
                 </div>
                 <Link
                   href="/products/xhale-health"
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* OKE-Ride */}
+            {/* Smart Navigation */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover-lift animate-fade-in-right" style={{ animationDelay: '0.3s' }}>
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6 animate-pulse-slow">
@@ -142,13 +142,13 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  OKE-Ride
+                  Smart Navigation
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                  Autonomous three-legged scooter platform with advanced navigation capabilities.
+                  Autonomous navigation platforms with advanced mobility and payload capabilities.
                 </p>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Example of our autonomous systems capabilities
+                  Example: OKE-Ride Autonomous Platform
                 </div>
                 <Link
                   href="/products/oke-ride"
