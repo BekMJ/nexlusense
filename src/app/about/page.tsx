@@ -45,7 +45,18 @@ export default function About() {
                 Advanced environmental monitoring solutions for industrial and environmental applications. We specialize in multi-parameter environmental sensing, cloud-based data analytics, long battery life, and ruggedized design for harsh environments.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Example: Methane Emission Detection System - designed for oil & gas leak detection, landfill monitoring, industrial compliance, and environmental research.</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Methane Emission Detection System - designed for oil & gas leak detection, landfill monitoring, industrial compliance, and environmental research.</span>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="/capabilities/environmental-sensing"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
+                >
+                  Learn more about Environmental Sensing
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -63,7 +74,18 @@ export default function About() {
                 Next-generation health monitoring and breath analysis solutions for personal health tracking. We develop innovative devices that offer precise health metrics, real-time monitoring, and personal health insights with cloud data synchronization.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Example: XHale-Health CO Monitor - designed for personal health monitoring, medical research, smoking cessation programs, and athletic performance tracking.</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">XHale-Health CO Monitor - designed for personal health monitoring, medical research, smoking cessation programs, and athletic performance tracking.</span>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="/capabilities/health-sensing"
+                  className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group"
+                >
+                  Learn more about Health Sensing
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -81,7 +103,18 @@ export default function About() {
                 Autonomous navigation platforms with advanced mobility and payload capabilities. We create revolutionary mobility solutions featuring autonomous navigation, terrain adaptation, payload customization, long-range operation, and smart obstacle avoidance.
               </p>
               <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Example: OKE-Ride Autonomous Platform - designed for last-mile delivery, industrial inspection, research platform development, and custom payload deployment.</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">OKE-Ride Autonomous Platform - designed for last-mile delivery, industrial inspection, research platform development, and custom payload deployment.</span>
+              </div>
+              <div className="mt-6">
+                <a
+                  href="/capabilities/smart-navigation"
+                  className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold group"
+                >
+                  Learn more about Smart Navigation
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

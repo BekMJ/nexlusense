@@ -80,30 +80,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
     return <div>Product not found</div>;
   }
 
-  // All available images for methane detection
-  const methaneImages = [
-    'methane1.jpg',
-    '0210E4E8-03DF-47D3-A726-33AED4A9D659.jpg',
-    '06968581-D52D-472D-AEA6-640442A7090A.jpg',
-    '1FE7C302-3CF0-43BF-891C-AA7C7F698345.jpg',
-    '3AFEC446-0AE7-4193-A986-EAED4C5684A5.jpg',
-    '3D1117A4-156E-4F50-9BA4-6F0BEF2419D1.jpg',
-    '3D61800D-5EB7-4AD4-85B6-840D47998CB2.jpg',
-    '533C70D0-B66B-4BF9-A960-675C7E92637B.jpg',
-    '881FB684-E8B6-44AB-9720-540340C85854.jpg',
-    '8EEAB92A-94B9-4165-B210-3E5947C020A0.jpg',
-    '9E5362C0-C5BC-45D2-A0B3-B7F583312791.jpg',
-    'C53535FA-C739-44A4-B674-484C0064B35B.jpg',
-    'C561C44C-A772-4583-9FEC-2A5A5500ABA9.jpg',
-    'C853E8DA-9CEE-4FB0-92DB-8C31A45ADEF9.jpg',
-    'CDB2F166-157A-4FED-A628-2155B996598D.jpg',
-    'D1404A8E-9D72-48B9-93FC-1D20FBF87A96.jpg',
-    'D68EC82D-E704-460B-82FB-F0AF573E9E89.jpg',
-    'EF5D6CEF-4912-4428-B2C2-ADFF3F2867EE.jpg',
-    'F164DBF0-E166-4552-A50B-AC0E9E3ABFD0.jpg',
-    'methane2.jpg'
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Hero Section */}
@@ -196,33 +172,27 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </div>
 
-      {/* Enhanced Image Gallery for Methane Detection */}
+      {/* Product Image for Methane Detection */}
       {resolvedParams.product === 'methane-detection' && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Product Gallery
+              Product Image
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Explore our comprehensive collection of methane detection system images showcasing advanced technology and precision engineering.
+              Our advanced methane detection system designed for industrial and environmental monitoring applications.
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-            {methaneImages.map((image, index) => (
-              <div key={index} className="group relative aspect-square rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <Image
-                  src={`/${image}`}
-                  alt={`Methane Detection System - Image ${index + 1}`}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-sm font-medium">Image {index + 1}</p>
-                </div>
-              </div>
-            ))}
+          <div className="flex justify-center">
+            <div className="relative aspect-video w-full max-w-4xl rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-lg">
+              <Image
+                src="/methane1.jpg"
+                alt="Methane Detection System"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       )}

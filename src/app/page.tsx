@@ -90,10 +90,10 @@ export default function Home() {
                   Advanced environmental monitoring solutions for industrial and environmental applications.
                 </p>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Example: Methane Detection System
+                  Methane Detection System
                 </div>
                 <Link
-                  href="/products/methane-detection"
+                  href="/capabilities/environmental-sensing"
                   className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
                 >
                   Learn more 
@@ -119,10 +119,10 @@ export default function Home() {
                   Next-generation health monitoring and breath analysis solutions for personal health tracking.
                 </p>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Example: XHale-Health CO Monitor
+                  XHale-Health CO Monitor
                 </div>
                 <Link
-                  href="/products/xhale-health"
+                  href="/capabilities/health-sensing"
                   className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group"
                 >
                   Learn more 
@@ -148,10 +148,10 @@ export default function Home() {
                   Autonomous navigation platforms with advanced mobility and payload capabilities.
                 </p>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Example: OKE-Ride Autonomous Platform
+                  OKE-Ride Autonomous Platform
                 </div>
                 <Link
-                  href="/products/oke-ride"
+                  href="/capabilities/smart-navigation"
                   className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold group"
                 >
                   Learn more 
