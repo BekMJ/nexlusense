@@ -56,6 +56,15 @@ export default function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
+              href="/capabilities/environmental-sensing"
+              className={`text-sm font-medium transition-all duration-300 hover:text-blue-600 relative group ${
+                isScrolled ? "text-gray-700 dark:text-gray-300" : "text-white"
+              }`}
+            >
+              Capabilities
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+            </Link>
+            <Link
               href="/about"
               className={`text-sm font-medium transition-all duration-300 hover:text-blue-600 relative group ${
                 isScrolled ? "text-gray-700 dark:text-gray-300" : "text-white"
@@ -80,7 +89,7 @@ export default function Header() {
               }`}
             >
               Contact
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute -bottom-1 left-0 w-0.5 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
               href="/contact"
@@ -138,6 +147,13 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link
+                href="/capabilities/environmental-sensing"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Capabilities
               </Link>
               <Link
                 href="/about"

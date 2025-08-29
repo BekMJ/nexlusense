@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import CO9Viewer from '@/components/CO9Viewer';
 
 export const metadata: Metadata = {
   title: 'Health Sensing | NexLuSense',
@@ -60,23 +61,8 @@ export default function HealthSensing() {
             </div>
             
             <div className="animate-fade-in-right">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-600 rounded-3xl transform rotate-3 hover:rotate-0 transition-transform duration-500"></div>
-                <div className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                      Portable Health Monitoring
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Take your health monitoring anywhere with our compact, professional-grade sensor devices.
-                    </p>
-                  </div>
-                </div>
+              <div className="lg:sticky lg:top-24">
+                <CO9Viewer />
               </div>
             </div>
           </div>

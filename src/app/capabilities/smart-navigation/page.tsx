@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import ScooterViewer from '@/components/ScooterViewer';
 
 export const metadata: Metadata = {
   title: 'Smart Navigation | NexLuSense',
@@ -60,23 +61,8 @@ export default function SmartNavigation() {
             </div>
             
             <div className="animate-fade-in-right">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-600 rounded-3xl transform rotate-3 hover:rotate-0 transition-transform duration-500"></div>
-                <div className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-xl">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                      Future of Mobility
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Revolutionary transportation platform with autonomous navigation and intelligent connectivity.
-                    </p>
-                  </div>
-                </div>
+              <div className="lg:sticky lg:top-24">
+                <ScooterViewer />
               </div>
             </div>
           </div>

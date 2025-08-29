@@ -76,89 +76,74 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Environmental Sensing */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover-lift animate-fade-in-left" style={{ animationDelay: '0.1s' }}>
-              <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 animate-pulse-slow">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
+            <div className="relative h-[520px] rounded-3xl overflow-hidden hover-lift animate-fade-in-left" style={{ animationDelay: '0.1s' }}>
+              <Image src="/environment-monitoring-system-1000x1000.webp" alt="Environmental Sensing" fill className="object-cover" />
+              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+                <h3 className="text-3xl font-bold text-white mb-3">Environmental Sensing</h3>
+                <p className="text-white/80 mb-6 max-w-md">Autonomous environmental monitoring solutions for industrial and environmental applications.</p>
+                <div className="flex items-center gap-6">
+                  <Link href="/capabilities/environmental-sensing" className="inline-flex items-center text-white font-semibold group">
+                    Learn more
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                  <Link href="/contact" className="inline-flex items-center text-white/80 hover:text-white group">
+                    Contact
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Environmental Sensing
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                  Advanced environmental monitoring solutions for industrial and environmental applications.
-                </p>
-                <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  Methane Detection System
-                </div>
-                <Link
-                  href="/capabilities/environmental-sensing"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
-                >
-                  Learn more 
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
 
             {/* Health Sensing */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover-lift animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 animate-pulse-slow">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
+            <div className="relative h-[520px] rounded-3xl overflow-hidden hover-lift animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <Image src="/breath.png" alt="Health Sensing" fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+                <h3 className="text-3xl font-bold text-white mb-3">Health Sensing</h3>
+                <p className="text-white/80 mb-6 max-w-md">Portable sensor devices with BLE connectivity and cross-platform mobile apps.</p>
+                <div className="flex items-center gap-6">
+                  <Link href="/capabilities/health-sensing" className="inline-flex items-center text-white font-semibold group">
+                    Learn more
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                  <Link href="/contact" className="inline-flex items-center text-white/80 hover:text-white group">
+                    Contact
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Health Sensing
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                  Next-generation health monitoring and breath analysis solutions for personal health tracking.
-                </p>
-                <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  XHale-Health CO Monitor
-                </div>
-                <Link
-                  href="/capabilities/health-sensing"
-                  className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group"
-                >
-                  Learn more 
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
 
             {/* Smart Navigation */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden hover-lift animate-fade-in-right" style={{ animationDelay: '0.3s' }}>
-              <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6 animate-pulse-slow">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+            <div className="relative h-[520px] rounded-3xl overflow-hidden hover-lift animate-fade-in-right" style={{ animationDelay: '0.3s' }}>
+              <Image src="/smart%20navi.tiff" alt="Smart Navigation" fill className="object-cover" />
+              <div className="absolute inset-0 bg-black/40"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+                <h3 className="text-3xl font-bold text-white mb-3">Smart Navigation</h3>
+                <p className="text-white/80 mb-6 max-w-md">Autonomous mobility platforms with MQTT connectivity and intelligent control.</p>
+                <div className="flex items-center gap-6">
+                  <Link href="/capabilities/smart-navigation" className="inline-flex items-center text-white font-semibold group">
+                    Learn more
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                  <Link href="/contact" className="inline-flex items-center text-white/80 hover:text-white group">
+                    Contact
+                    <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Smart Navigation
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
-                  Autonomous navigation platforms with advanced mobility and payload capabilities.
-                </p>
-                <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                  OKE-Ride Autonomous Platform
-                </div>
-                <Link
-                  href="/capabilities/smart-navigation"
-                  className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold group"
-                >
-                  Learn more 
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
           </div>

@@ -43,7 +43,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300">asku@nexlusense.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">info@nexlusense.com</p>
                   </div>
                 </div>
 
@@ -55,7 +55,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-300">(405) 981-8456</p>
+                    <p className="text-gray-600 dark:text-gray-300">(405) 408-1862</p>
                   </div>
                 </div>
 
@@ -182,7 +182,7 @@ export default function Contact() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="mailto:asku@nexlusense.com"
+                href="mailto:info@nexlusense.com"
                 className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover-lift text-lg"
               >
                 Email Us Directly

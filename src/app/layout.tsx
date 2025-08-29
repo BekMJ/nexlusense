@@ -43,16 +43,16 @@ export default function RootLayout({
               <div>
                 <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li><Link href="/products/methane-detection" className="hover:text-gray-900 dark:hover:text-white">Methane Detection</Link></li>
-                  <li><Link href="/products/xhale-health" className="hover:text-gray-900 dark:hover:text-white">XHale-Health</Link></li>
-                  <li><Link href="/products/oke-ride" className="hover:text-gray-900 dark:hover:text-white">OKE-Ride</Link></li>
+                  <li><Link href="/capabilities/environmental-sensing" className="hover:text-gray-900 dark:hover:text-white">Environmental Sensing</Link></li>
+                  <li><Link href="/capabilities/health-sensing" className="hover:text-gray-900 dark:hover:text-white">Health Sensing</Link></li>
+                  <li><Link href="/capabilities/smart-navigation" className="hover:text-gray-900 dark:hover:text-white">Smart Navigation</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-4">Contact</h3>
                 <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li>Email: asku@nexlusense.com</li>
-                  <li>Phone: (405) 981-8456</li>
+                  <li>Email: info@nexlusense.com</li>
+                  <li>Phone: (405) 408-1862</li>
                 </ul>
               </div>
             </div>

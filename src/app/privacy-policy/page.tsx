@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
         <h2 className="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, You can contact us:</p>
         <ul className="list-disc pl-6 space-y-2">
-          <li>By email: asku@nexlusense.com</li>
+          <li>By email: info@nexlusense.com</li>
           <li>By visiting this page on our website: <a href="https://nexlusense.com/" className="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener noreferrer">https://nexlusense.com/</a></li>
         </ul>
       </div>
