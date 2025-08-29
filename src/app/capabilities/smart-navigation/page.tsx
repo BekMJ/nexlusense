@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import ScooterViewer from '@/components/ScooterViewer';
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function SmartNavigation() {
                 Smart Transportation Platform
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                We've developed a revolutionary smart transportation platform that combines cutting-edge navigation technology with autonomous capabilities. Our system represents the future of intelligent mobility, designed to operate seamlessly in various environments and applications.
+                We&apos;ve developed a revolutionary smart transportation platform that combines cutting-edge navigation technology with autonomous capabilities. Our system represents the future of intelligent mobility, designed to operate seamlessly in various environments and applications.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 The platform features advanced connectivity, real-time monitoring, and autonomous operation capabilities that make it ideal for last-mile delivery, industrial inspection, research applications, and custom payload deployment.
@@ -157,7 +158,7 @@ export default function SmartNavigation() {
                 Professional Mobile Applications
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                We've developed sophisticated mobile applications that transform your smartphone into a powerful control center for the smart transportation platform. These apps provide intuitive interfaces for monitoring, controlling, and managing all aspects of the platform's operation.
+                We&apos;ve developed sophisticated mobile applications that transform your smartphone into a powerful control center for the smart transportation platform. These apps provide intuitive interfaces for monitoring, controlling, and managing all aspects of the platform&apos;s operation.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 Our mobile solutions include advanced features like real-time tracking, remote unlocking, status monitoring, and comprehensive control over autonomous functions.
@@ -347,10 +348,10 @@ export default function SmartNavigation() {
               Ready for Smart Transportation?
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Let's discuss how our smart navigation and autonomous transportation solutions can revolutionize your mobility needs.
+              Let&apos;s discuss how our smart navigation and autonomous transportation solutions can revolutionize your mobility needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center px-8 py-4 bg-white text-orange-600 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover-lift text-lg"
               >
@@ -358,8 +359,8 @@ export default function SmartNavigation() {
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/products/oke-ride"
                 className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 hover-lift text-lg"
               >
@@ -367,7 +368,7 @@ export default function SmartNavigation() {
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

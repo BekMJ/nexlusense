@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import CO9Viewer from '@/components/CO9Viewer';
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function HealthSensing() {
                 Portable Sensor Technology
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                We've developed compact, portable sensor devices that bring professional-grade health monitoring capabilities to your fingertips. Our sensors are designed to be lightweight, durable, and easy to use while maintaining the accuracy and reliability of laboratory equipment.
+                We&apos;ve developed compact, portable sensor devices that bring professional-grade health monitoring capabilities to your fingertips. Our sensors are designed to be lightweight, durable, and easy to use while maintaining the accuracy and reliability of laboratory equipment.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 Each device is engineered with cutting-edge sensor technology, ensuring precise measurements and consistent performance across various environmental conditions and use cases.
@@ -157,7 +158,7 @@ export default function HealthSensing() {
                 Professional Mobile Applications
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                We've developed comprehensive mobile applications that transform your smartphone into a powerful health monitoring dashboard, providing intuitive interfaces and advanced analytics for your health data.
+                We&apos;ve developed comprehensive mobile applications that transform your smartphone into a powerful health monitoring dashboard, providing intuitive interfaces and advanced analytics for your health data.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 Our apps are built with modern development frameworks, ensuring smooth performance, beautiful design, and seamless integration with your sensor devices.
@@ -223,7 +224,7 @@ export default function HealthSensing() {
                 Multi-Gas Sensing Technology
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                While our CO monitoring capabilities are well-established, our sensor technology extends far beyond carbon monoxide detection. We've developed advanced multi-gas sensing systems that can detect and measure a wide range of health-related gases and compounds.
+                While our CO monitoring capabilities are well-established, our sensor technology extends far beyond carbon monoxide detection. We&apos;ve developed advanced multi-gas sensing systems that can detect and measure a wide range of health-related gases and compounds.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 Our sensors can be configured to detect various gases including methane, volatile organic compounds (VOCs), nitrogen dioxide, and other environmental pollutants that impact human health.
@@ -350,7 +351,7 @@ export default function HealthSensing() {
               Let's discuss how our portable health sensing solutions can help with your specific health monitoring and gas detection needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 hover-lift text-lg"
               >
@@ -358,8 +359,8 @@ export default function HealthSensing() {
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/products/xhale-health"
                 className="inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-full font-semibold hover:bg-white/10 transition-all duration-300 hover-lift text-lg"
               >
@@ -367,7 +368,7 @@ export default function HealthSensing() {
                 <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
