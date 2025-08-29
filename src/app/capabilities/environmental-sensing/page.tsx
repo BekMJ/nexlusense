@@ -270,7 +270,7 @@ export default function EnvironmentalSensing() {
               Ready to Deploy Environmental Sensing?
             </h2>
             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Let's discuss how our autonomous environmental monitoring solutions can help with your specific environmental sensing needs.
+              Let&apos;s discuss how our autonomous environmental monitoring solutions can help with your specific environmental sensing needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
