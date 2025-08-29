@@ -12,29 +12,104 @@ export default function About() {
               About NexLuSense
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Pioneering the future of photonic sensing and autonomous systems through 
-              innovative research and cutting-edge technology development.
+              A professor-student-led innovation studio that bridges the gap between academic research and real-world applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Description Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl font-bold gradient-text mb-6">
+              Who We Are
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              NexLuSense is a professor-student-led innovation studio that bridges the gap between academic research and real-world applications. We specialize in developing cutting-edge technology solutions across three key domains.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            {/* Methane Detection */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Methane Emission Detection System
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                Our flagship environmental monitoring technology that provides real-time methane concentration monitoring for industrial and environmental applications. Features multi-parameter environmental sensing, cloud-based data analytics, long battery life, and ruggedized design for harsh environments.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-500 dark:text-gray-400">Designed for: Oil & gas leak detection, landfill monitoring, industrial compliance, and environmental research.</span>
+              </div>
+            </div>
+
+            {/* Health Monitoring */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Health Monitoring Device
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                A next-generation CO monitoring breath analyzer for personal health tracking. This innovative device offers precise CO breath analysis, real-time health metrics, and personal health insights with cloud data synchronization.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-500 dark:text-gray-400">Designed for: Personal health monitoring, medical research, smoking cessation programs, and athletic performance tracking.</span>
+              </div>
+            </div>
+
+            {/* Smart Navigation */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Smart Navigation System
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                An autonomous three-legged scooter platform with advanced navigation capabilities. This revolutionary mobility solution features autonomous navigation, terrain adaptation, payload customization, long-range operation, and smart obstacle avoidance.
+              </p>
+              <div className="mt-4">
+                <span className="text-sm text-gray-500 dark:text-gray-400">Designed for: Last-mile delivery, industrial inspection, research platform development, and custom payload deployment.</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+              Our Capabilities
+            </h3>
+            <p className="text-lg text-gray-600 dark:text-gray-300 text-center leading-relaxed">
+              The Health Monitoring Device and Smart Navigation System represent just two examples of our broader capabilities in developing innovative technology solutions. We have the expertise to create custom solutions across various domains, leveraging our core competencies in sensor technology, autonomous systems, and mobile application development.
             </p>
           </div>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                Our Mission
+                Our Approach
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                At NexLuSense, we bridge the gap between academic research and real-world applications. 
-                Our professor-student partnership model enables us to push the boundaries of what&apos;s possible 
-                in photonic sensing and autonomous systems.
+                We combine theoretical expertise with practical implementation, creating solutions that make a meaningful impact on society. Our professor-student partnership model enables us to push the boundaries of what&apos;s possible in photonic sensing and autonomous systems.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                We believe that the best innovations come from combining theoretical expertise with 
-                practical implementation, creating solutions that make a meaningful impact on society.
+                We believe that the best innovations come from combining theoretical expertise with practical implementation, creating solutions that make a meaningful impact on society.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center space-x-2">
@@ -76,7 +151,7 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl font-bold gradient-text mb-6">
@@ -132,6 +207,20 @@ export default function About() {
                 addressing critical challenges in environmental monitoring and autonomous systems.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Statement Section */}
+      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl font-bold gradient-text mb-6">
+              Our Mission
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              To pioneer the future of photonic sensing and autonomous systems through innovative research and cutting-edge technology development, creating solutions that address critical challenges in environmental monitoring, personal health, and autonomous mobility.
+            </p>
           </div>
         </div>
       </section>

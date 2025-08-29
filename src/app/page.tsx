@@ -42,9 +42,7 @@ export default function Home() {
               <span className="gradient-text">NexLuSense</span>
             </h1>
             <p className="mt-8 text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto drop-shadow animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              A professor-student-led innovation studio pushing the boundaries of 
-              <span className="text-blue-300 font-semibold"> photonic sensing</span> and 
-              <span className="text-purple-300 font-semibold"> autonomous systems</span>.
+              A professor-student-led innovation studio that bridges the gap between academic research and real-world applications, specializing in cutting-edge technology solutions across multiple domains.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <Link
@@ -69,10 +67,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-              Our Products
+              Our Capabilities
             </h2>
             <p className="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Innovative solutions for environmental monitoring and autonomous systems
+              Examples of our innovative solutions for environmental monitoring and autonomous systems
             </p>
           </div>
 
@@ -91,6 +89,9 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
                   Advanced methane detection system for industrial and environmental monitoring.
                 </p>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  Example of our environmental monitoring capabilities
+                </div>
                 <Link
                   href="/products/methane-detection"
                   className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
@@ -117,6 +118,9 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
                   Next-generation CO monitoring breath analyzer for personal health tracking.
                 </p>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  Example of our health monitoring capabilities
+                </div>
                 <Link
                   href="/products/xhale-health"
                   className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group"
@@ -143,6 +147,9 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-lg">
                   Autonomous three-legged scooter platform with advanced navigation capabilities.
                 </p>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  Example of our autonomous systems capabilities
+                </div>
                 <Link
                   href="/products/oke-ride"
                   className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold group"
@@ -166,7 +173,7 @@ export default function Home() {
               Why Choose NexLuSense?
             </h2>
             <p className="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Combining academic expertise with practical innovation
+              Combining academic expertise with practical innovation to create real-world solutions
             </p>
           </div>
 
