@@ -160,7 +160,7 @@ export default function About() {
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up">
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-blue-100 dark:ring-blue-900">
-                  <Image src="/Dr.Weng" alt="Dr. Binbin Weng" fill className="object-cover" />
+                  <Image src="/weng.jpg" alt="Dr. Binbin Weng" fill className="object-cover" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Dr. Binbin Weng</h3>
                 <p className="text-blue-600 dark:text-blue-400 font-semibold mt-1">Chief Executive Officer</p>
