@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import TransitionWrapper from "@/components/TransitionWrapper";
 import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,17 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-lg font-semibold mb-4">NexLuSense</h3>
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="relative w-8 h-8">
+                    <Image 
+                      src="/logo-Picsart-BackgroundRemover.png" 
+                      alt="NexLuSense Logo" 
+                      fill 
+                      className="object-contain" 
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold">NexLuSense</h3>
+                </div>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   Pushing the boundaries of photonic sensing and autonomous systems.
                 </p>

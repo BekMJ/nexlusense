@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -8,127 +9,27 @@ export default function About() {
       <section className="relative py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in-up">
+            <div className="flex justify-center mb-6">
+              <div className="relative w-20 h-20 md:w-24 md:h-24">
+                <Image 
+                  src="/logo-Picsart-BackgroundRemover.png" 
+                  alt="NexLuSense Logo" 
+                  fill 
+                  className="object-contain" 
+                />
+              </div>
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold gradient-text mb-6">
               About NexLuSense
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              A professor-student-led innovation studio that bridges the gap between academic research and real-world applications.
+              Meet the team behind our innovative solutions and learn about our mission to transform research into real-world impact.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Company Description Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-4xl font-bold gradient-text mb-6">
-              Who We Are
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              NexLuSense is a professor-student-led innovation studio that bridges the gap between academic research and real-world applications. We specialize in developing cutting-edge technology solutions across three key domains.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            {/* Environmental Sensing */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Environmental Sensing
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Advanced environmental monitoring solutions for industrial and environmental applications. We specialize in multi-parameter environmental sensing, cloud-based data analytics, long battery life, and ruggedized design for harsh environments.
-              </p>
-              <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">Methane Emission Detection System - designed for oil & gas leak detection, landfill monitoring, industrial compliance, and environmental research.</span>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="/capabilities/environmental-sensing"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group"
-                >
-                  Learn more about Environmental Sensing
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            {/* Health Sensing */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Health Sensing
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Next-generation health monitoring and breath analysis solutions for personal health tracking. We develop innovative devices that offer precise health metrics, real-time monitoring, and personal health insights with cloud data synchronization.
-              </p>
-              <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">XHale-Health CO Monitor - designed for personal health monitoring, medical research, smoking cessation programs, and athletic performance tracking.</span>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="/capabilities/health-sensing"
-                  className="inline-flex items-center text-purple-600 hover:text-purple-700 font-semibold group"
-                >
-                  Learn more about Health Sensing
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            {/* Smart Navigation */}
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover-lift">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Smart Navigation
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Autonomous navigation platforms with advanced mobility and payload capabilities. We create revolutionary mobility solutions featuring autonomous navigation, terrain adaptation, payload customization, long-range operation, and smart obstacle avoidance.
-              </p>
-              <div className="mt-4">
-                <span className="text-sm text-gray-500 dark:text-gray-400">OKE-Ride Autonomous Platform - designed for last-mile delivery, industrial inspection, research platform development, and custom payload deployment.</span>
-              </div>
-              <div className="mt-6">
-                <a
-                  href="/capabilities/smart-navigation"
-                  className="inline-flex items-center text-orange-600 hover:text-orange-700 font-semibold group"
-                >
-                  Learn more about Smart Navigation
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-              Our Capabilities
-            </h3>
-            <p className="text-lg text-gray-600 dark:text-gray-300 text-center leading-relaxed">
-              These three core areas represent examples of our broader capabilities in developing innovative technology solutions. We have the expertise to create custom solutions across various domains, leveraging our core competencies in sensor technology, autonomous systems, and mobile application development.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Mission Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
@@ -239,6 +140,97 @@ export default function About() {
                 We focus on creating solutions that make a real difference in the world, 
                 addressing critical challenges in environmental monitoring and autonomous systems.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team Section */}
+      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-4xl font-bold gradient-text mb-6">Our Team</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              The people behind NexLuSense&apos;s research-driven innovation and product execution
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {/* CEO - Dr. Binbin Weng */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up">
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-blue-100 dark:ring-blue-900">
+                  <Image src="/Dr.Weng" alt="Dr. Binbin Weng" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Dr. Binbin Weng</h3>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold mt-1">Chief Executive Officer</p>
+              </div>
+            </div>
+
+            {/* Project Manager - Yang Yan */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-purple-100 dark:ring-purple-900">
+                  <Image src="/yang.jpeg" alt="Yang Yan" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Yang Yan</h3>
+                <p className="text-purple-600 dark:text-purple-400 font-semibold mt-1">Project Manager</p>
+              </div>
+            </div>
+
+            {/* Hardware Engineer - Tyler Beringer */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-green-100 dark:ring-green-900">
+                  <Image src="/tyler.jpeg" alt="Tyler Beringer" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Tyler Beringer</h3>
+                <p className="text-green-600 dark:text-green-400 font-semibold mt-1">Hardware Engineer</p>
+              </div>
+            </div>
+
+            {/* Administrative Manager - Erum Hassan */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-orange-100 dark:ring-orange-900">
+                  <Image src="/erum.jpeg" alt="Erum Hassan" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Erum Hassan</h3>
+                <p className="text-orange-600 dark:text-orange-400 font-semibold mt-1">Administrative Manager</p>
+              </div>
+            </div>
+
+            {/* Embedded Software Engineer - Lkhanaajav Mijiddorj */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-indigo-100 dark:ring-indigo-900">
+                  <Image src="/Lkhanaajav.jpeg" alt="Lkhanaajav Mijiddorj" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Lkhanaajav Mijiddorj</h3>
+                <p className="text-indigo-600 dark:text-indigo-400 font-semibold mt-1">Embedded Software Engineer</p>
+              </div>
+            </div>
+
+            {/* Software Developer - Bek Mijiddorj */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-pink-100 dark:ring-pink-900">
+                  <Image src="/Bek.jpeg" alt="Bek Mijiddorj" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Bek Mijiddorj</h3>
+                <p className="text-pink-600 dark:text-pink-400 font-semibold mt-1">Software Developer</p>
+              </div>
+            </div>
+
+            {/* Electrical Engineer - Alex Ho */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+              <div className="flex flex-col items-center text-center">
+                <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-teal-100 dark:ring-teal-900">
+                  <Image src="/Alex.jpeg" alt="Alex Ho" fill className="object-cover" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Alex Ho</h3>
+                <p className="text-teal-600 dark:text-teal-400 font-semibold mt-1">Electrical Engineer</p>
+              </div>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,12 +29,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-10 h-10 md:w-12 md:h-12">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-lg"></div>
-              <div className="absolute inset-1 bg-white dark:bg-gray-900 rounded-lg flex items-center justify-center">
-                <span className="text-lg md:text-xl font-bold gradient-text">N</span>
-              </div>
+              <Image 
+                src="/logo-Picsart-BackgroundRemover.png" 
+                alt="NexLuSense Logo" 
+                fill 
+                className="object-contain group-hover:scale-110 transition-transform duration-300" 
+              />
             </div>
             <span className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${
               isScrolled 
@@ -53,15 +56,6 @@ export default function Header() {
               }`}
             >
               Home
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
-            </Link>
-            <Link
-              href="/capabilities/environmental-sensing"
-              className={`text-sm font-medium transition-all duration-300 hover:text-blue-600 relative group ${
-                isScrolled ? "text-gray-700 dark:text-gray-300" : "text-white"
-              }`}
-            >
-              Capabilities
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
@@ -147,13 +141,6 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </Link>
-              <Link
-                href="/capabilities/environmental-sensing"
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Capabilities
               </Link>
               <Link
                 href="/about"

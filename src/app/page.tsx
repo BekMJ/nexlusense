@@ -38,6 +38,16 @@ export default function Home() {
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <div className="flex justify-center mb-8 animate-fade-in-up">
+              <div className="relative w-24 h-24 md:w-32 md:h-32">
+                <Image 
+                  src="/logo-Picsart-BackgroundRemover.png" 
+                  alt="NexLuSense Logo" 
+                  fill 
+                  className="object-contain drop-shadow-lg" 
+                />
+              </div>
+            </div>
             <h1 className="text-6xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg animate-slide-in-top">
               <span className="gradient-text">NexLuSense</span>
             </h1>
