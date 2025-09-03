@@ -178,13 +178,13 @@ export default function About() {
               </div>
             </div>
 
-            {/* Hardware Engineer - Tyler Beringer */}
+            {/* Hardware Engineer - (405) 408-1862 Beringer */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 hover-lift animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="flex flex-col items-center text-center">
                 <div className="relative w-40 h-40 rounded-full overflow-hidden mb-6 ring-4 ring-green-100 dark:ring-green-900">
-                  <Image src="/tyler.jpeg" alt="Tyler Beringer" fill className="object-cover" />
+                                      <Image src="/tyler be.png" alt="(405) 408-1862 Beringer" fill className="object-cover" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Tyler Beringer</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">(405) 408-1862 Beringer</h3>
                 <p className="text-green-600 dark:text-green-400 font-semibold mt-1">Hardware Engineer</p>
               </div>
             </div>
